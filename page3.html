@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <script src="engine.js"></script> -->
+  <link rel="stylesheet" href="style.css">
+
+  <header>
+    <table class="top">
+      <title>BPHC Travel</title>
+      <tr>
+        <td id="heading"><a href="index.html"><img class="logo" src="bitslogo.gif" alt=" bitslogo"></img>
+          </a></td>
+        <div class="header">
+          <td id="bphc"><a href="index.html">
+              <h1>BPHC Travel</h1>
+          </td>
+          </a>
+        </div>
+
+        <td id="menu">
+      <menu><a href=""><img alt="" width="25%" height="25%" src="crux logo1.png" class="cruxlogo">
+        <menu></menu>
+        </td>
+      </tr>
+    </table>
+  </header>
+
+<body>
+  <div class="cardholder">
+
+    <div id="cards">
+
+      <table class="schedule" id="datatable">
+        <tr class="tablehead">
+          <th>Name</th>
+          <th>Destination</th>
+          <th>Date</th>
+          <th>Timings</th>
+
+          <th>Phone</th>
+        </tr>
+        <tr>
+          <td><span id="name1"></span></td>
+          <td><span id="destination1"></span></td>
+          <td><span id="date1"></span></td>
+          <td><span id="time1"></span></td>
+          <td><span id="phone1"></span></td>
+        </tr>
+        <tr> </tr>
+      </table>
+    </div>
+  </div>
+</body>
+<div class="space"></div>
+<div class="footer">
+  For any queries contact: travelBPHC321@gmail.com
+</div>
+<script>
+  console.log("page3")
+
+  var phone = localStorage.getItem('phone');
+  var name = localStorage.getItem('name');
+  var destination = localStorage.getItem('destination');
+  var date = localStorage.getItem('date');
+  var time = localStorage.getItem('time');
+  console.log(phone);
+  document.getElementById('phone1').textContent = phone;
+  document.getElementById('name1').textContent = name;
+  document.getElementById('destination1').textContent = destination;
+  document.getElementById('date1').textContent = date;
+  document.getElementById('time1').textContent = time;
+  // var string = phone
+  // var length = string.length;
+  // console.log(string);
+  // console.log(length);
+  // var a = ".";
+
+  // for (var i = 0; i <= length; i++) {
+  //   var d = "$";
+
+  //   a = a + string.charAt(i)
+  //   console.log(a);
+  //   if (string.charAt(i).equals(d))
+    
+  // }
+  // console.log(a);
+  // a = ".";
+  // console.log(a);
+
+
+
+</script>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+</head>
+<!-- <script src="engine.js"></script>  -->
+<link rel="stylesheet" href="style.css">
+<table class="top">
+  <title>BPHC Travel</title>
+  <tr>
+    <td id="heading"><a href="index.html"><img class="logo" src="bitslogo.gif" alt=" bitslogo" />
+      </a></td>
+    <div class="header">
+      <td id="bphc"><a href="index.html">
+          <h1>BPHC Travel</h1>
+        </a>
+      </td>
+    </div>
+
+    <td id="menu">
+      <menu><a href=""><img alt="" width="25%" height="25%" src="crux logo1.png" class="cruxlogo">
+        <menu></menu>
+    </td>
+  </tr>
+</table>
+
+<body>
+  <div class="cardholder"><span id="block"></span>
+    <div class="slot">
+
+      <form id="form">
+        <label for="name">Name</label><br>
+        <input type="text" id="name"><br>
+        <label for="destination"> Destination</label><br>
+        <input type="text" id="destination"><br>
+
+        <label for="date"> Date</label><br>
+        <input type="date" id="date"><br>
+
+
+
+        <label for="time">Timings </label><br>
+        <input type="number" id="timeh" pattern="[1-12]{1}"><br>
+        <input type="number" id="timem"><br>
+
+        <label for="phone">Phone no</label><br>
+        <input type="tel" id="phone" pattern="[0-9]{10}"><br>
+        <label for="am/pm"> AM/PM</label><br>
+        <label for="am/pm">AM </label>
+        <input type="radio" id="am" name="am/pm" value="AM">
+        <label for="am/pm">PM </label>
+
+        <input type="radio" id="am/pm" name="am/pm" value="PM">
+        <input type="submit" onclick="formdata()" value="Submit"> -->
+      </form>
+    </div>
+    <div class="space"></div>
+    <div class="footer">
+      For any queries contact: travelBPHC321@gmail.com
+    </div>
+
+</body>
+<script>
+  function formdata() {
+    console.log("working");
+    var form = document.getElementById('form');
+    var name = document.getElementById('name').value;
+    var destination = document.getElementById("destination").value;
+    var date = document.getElementById("date").value;
+
+    var phone = document.getElementById("phone").value;
+    var timeh = document.getElementById("timeh").value;
+    var timem = document.getElementById("timem").value;
+
+    console.log(phone);
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+
+      // var str = "Name: " + name + " " + "Destination: " + destination + " " + "Date: " + date + "Phone: " + phone + "Time: " + timeh + ":" + timem;
+      window.localStorage.setItem('name', name);
+      window.localStorage.setItem('destination', destination);
+      window.localStorage.setItem('date', date);
+      window.localStorage.setItem('phone', phone);
+      window.localStorage.setItem('time', timeh + ":" + timem);
+      // console.log(str);
+      window.location.href = "page3.html";
+
+
+
+    })
+  }
+</script>
+
+</html>
