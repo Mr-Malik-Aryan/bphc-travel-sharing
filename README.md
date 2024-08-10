@@ -1,4 +1,4 @@
-# BPHC Travel -My first HtMl CSS and Vanilla JS site
+# BPHC Travel -My first HTML CSS and Vanilla JS site
 ---
 This application is created with the motive to help students of BPHC in Sharing cabs, getting related travel info,and cab contacts 
 
